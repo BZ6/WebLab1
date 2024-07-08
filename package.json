@@ -1,0 +1,21 @@
+{
+  "name": "tmp3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "source/main.js",
+  "scripts": {
+    "build": "npx webpack --mode production",
+    "start": "npx webpack --mode development"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.3",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  }
+}

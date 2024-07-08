@@ -1,0 +1,83 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><title>lab1</title><style>.shot-form {
+                overflow: hidden;
+                border-collapse: collapse;
+                padding: 1em;
+            }
+            #shot-table {
+                border-collapse: collapse;
+                width: 100%;
+                overflow: hidden;
+            }
+
+            body {
+                background-image: url('../image/sky.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .header-text {
+                font-family: cursive;
+                color: black;
+                font-size: 20px;
+            }
+
+            #canvas {
+                height: 40vh;
+            }
+            .plot{
+                border-top: 1px ridge #F1692F;
+                border-bottom: 1px ridge #F1692F;
+                text-align: center;
+            }
+            td > input[type="submit"] {
+                background: aqua;
+            }
+            table {
+                border-radius: 100px;
+
+                font-family: "fantasy";
+                font-size: 14px;
+
+                width: 70%;
+                margin: auto;
+
+                text-align: center;
+                border-collapse: collapse;
+                border-top: 5px ridge #F1692F;
+                border-bottom: 5px ridge #F1692F;
+                border-right: 5px ridge #F1692F;
+                border-left: 5px ridge #F1692F;
+            }
+            th {
+                font-size: 13px;
+                font-weight: normal;
+                background: #FFBB97;
+                border-top: 2px ridge #F1692F;
+                border-bottom: 2px ridge #F1692F;
+                border-right: 1px ridge #F1692F;
+                border-left: 1px ridge #F1692F;
+                color: black;
+                padding: 8px;
+            }
+            td {
+                background: #FFBB97;
+                border-right: 1px ridge #F1692F;
+                border-left: 1px ridge #F1692F;
+                color: black;
+                padding: 8px;
+            }
+            td table {
+                border-radius: 0;
+
+                font-family: "fantasy";
+                font-size: 14px;
+
+                width: 98%;
+                margin: auto;
+
+                text-align: center;
+                border-collapse: separate;
+                border-top: 2px ridge brown;
+                border-bottom: 2px ridge brown;
+                border-right: 3px ridge brown;
+                border-left: 2px ridge brown;
+            }</style><script defer="defer" src="bundle.js"></script></head><body><table><thead><tr><th colspan="2"><label class="header-text">Захаркин Богдан Владимирович, P3209, вариант 1991</label></th></tr></thead><tbody><tr class="plot"><td class="plot" colspan="2"><canvas id="canvas"></canvas></td></tr><tr><td><form class="shot-form"><table><tr><td><label id="input_x">X:</label></td><td><label class="checkbox"><input type="checkbox" name="x" value="-5"/> -5</label> <label class="checkbox"><input type="checkbox" name="x" value="-4"/> -4</label> <label class="checkbox"><input type="checkbox" name="x" value="-3"/> -3</label> <label class="checkbox"><input type="checkbox" name="x" value="-2"/> -2</label> <label class="checkbox"><input type="checkbox" name="x" value="-1"/> -1</label> <label class="checkbox"><input type="checkbox" name="x" value="0"/> 0</label> <label class="checkbox"><input type="checkbox" name="x" value="1"/> 1</label> <label class="checkbox"><input type="checkbox" name="x" value="2"/> 2</label> <label class="checkbox"><input type="checkbox" name="x" value="3"/> 3</label></td></tr><tr><td><label id="input_y">Y:</label></td><td><label><input name="y" placeholder="from -3.0 to 3.0" maxlength="8" pattern="(?:-3|\+?3)(?:[.,]0+)?|(?:-[43210]|\+?[012])(?:[.,]\d{0,13})?" autofocus required/></label></td></tr><tr><td><label id="input_r">R:</label></td><td><button type="button" name="r" value="1">1</button> <button type="button" name="r" value="1.5">1.5</button> <button type="button" name="r" value="2">2</button> <button type="button" name="r" value="2.5">2.5</button> <button type="button" name="r" value="3">3</button></td></tr><tr><td id="alert_output"></td><td><input type="submit" value="Shoot" class="submit-button"/></td></tr></table></form></td></tr><tr><td><table><tbody><tr><td><table id="shot-table"><thead><tr><th>№</th><th>Shot</th><th>Time</th><th>Result</th></tr></thead><tbody></tbody></table></td></tr></tbody></table></td></tr></tbody></table></body></html>
